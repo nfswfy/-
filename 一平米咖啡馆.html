@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://coffeemaker2016.siemens-home.bsh-group.cn/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link href="./一平米咖啡馆_files/index.css" type="text/css" rel="stylesheet">
+<link href="./一平米咖啡馆_files/animations.css" type="text/css" rel="stylesheet">
+<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no">
+<title>一平米咖啡馆</title>
+<script type="text/javascript" async="" src="./一平米咖啡馆_files/collect.js"></script><script async="" src="./一平米咖啡馆_files/analytics.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','./一平米咖啡馆_files/analytics.js','ga');
+
+  ga('create', 'UA-57031428-9', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+var _smq = _smq || [];
+
+_smq.push(['_setAccount', '381c621', new Date()]);
+_smq.push(['pageview']);
+
+(function() {
+var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
+sm.src = './一平米咖啡馆_files/collect.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
+})();
+</script>
+
+
+<style>
+.upBtn{ position:absolute; background:url(./一平米咖啡馆_files/upBtn2.png) no-repeat; width:56px; height:51px; /*left:50%;*/ margin-left:-28px; bottom:4%;  left:-200%; display:none;}
+
+.fudong3 {
+	animation: 1s linear 0s none infinite alternate  fudong3;
+	-webkit-animation: 1s linear 0s none infinite alternate fudong3;
+}
+@keyframes fudong {
+	from{ transform:translate3d(0,0,0); opacity:1;}
+	to{ transform:translate3d(0,12px,0);}	
+}
+@-webkit-keyframes fudong {
+	from{ -webkit-transform:translate3d(0,0,0); opacity:1;}
+	to{ -webkit-transform:translate3d(0,12px,0);}	
+}
+
+
+.shareico { width:171px; height:162px; background:url(http://bsh-h5campaign.s3.cn-north-1.amazonaws.com.cn/campaign/coffeemaker2016/images/share.png); position:absolute; right:20px; top:0px;
+
+
+
+animation: btnico 2s steps(35) infinite;
+-webkit-animation: btnico 2s steps(35) infinite;
+
+
+
+
+}
+
+.sharebox { width:100%; height:100%; position:absolute; z-index:9999; left:0; top:0; background:rgba(0,0,0,0.7); display:none;}
+
+
+
+@-webkit-keyframes btnico {
+   from { background-position:0 0; }
+     to { background-position:0 -5670px; }
+}
+
+
+@keyframes btnico {
+   from { background-position:0 0; }
+     to { background-position:0 -5670px; }
+}
+
+.s5-4{ position:absolute; background:url(./一平米咖啡馆_files/5-5s.png) no-repeat; width:302px; height:76px; left:50%; margin-left:-151px; bottom:73px}
+·
+</style>
+</head>
+<body>	
+<div class="ajaxloading"></div>
+
+<!--浮层-->
+<div class="mask"></div>
+<div class="popbox popbox1"></div>
+
+
+<div class="sharebox" ontouchend="$(this).fadeOut()">
+	<div class="shareico"></div>
+</div>
+
+<div style="position:absolute; left:-9999px; overflow:hidden; width:0; height:0;">
+     <audio id="sound0" src="" preload="preload" loop=""></audio>
+</div>
+<span class="sound-on sound-off" style="display:block;"></span>
+            <span class="s5-5"></span>
+
+<!--loading-->
+<div class="loading" id="loading" style="display:block;">
+	<div class="box">
+		  <div class="lod-1">
+              <span><img class="cpImg" src="./一平米咖啡馆_files/0-1-1.png" style="display: inline; opacity: 1;"></span>
+              <span><img class="cpImg" src="./一平米咖啡馆_files/0-1-2.png" style="display: inline; opacity: 1;"></span>
+              <span><img class="cpImg" src="./一平米咖啡馆_files/0-1-3.png" style="display: inline; opacity: 1;"></span>
+              <span><img class="cpImg" src="./一平米咖啡馆_files/0-1-4.png" style="display: inline; opacity: 1;"></span>
+              <span><img src="./一平米咖啡馆_files/0-1-5.png" style="display: inline; opacity: 1;"></span>
+              <span><img src="./一平米咖啡馆_files/0-1-6.png" style="display: inline; opacity: 1;"></span>
+          </div>
+          <span class="lod-2" style="display: inline;"><canvas id="q0" width="455" height="462"></canvas></span>
+          <span class="lod-3" style="display: inline;"></span>
+          <span class="lod-4" style="display: inline; opacity: 1;"></span>
+    </div>
+    <p></p>
+</div>
+
+<div class="box-content" id="main">
+	<div class="box-step zhuquan1" style="display: block;">
+         <div class="s1-1">
+             <span scale="1.3" class="layer" data-depth="0.2"><img src="./一平米咖啡馆_files/1-2-1.png"></span>
+             <span scale="1.2" class="layer" data-depth="0.15"><img src="./一平米咖啡馆_files/1-2-2.png"></span>
+             <span scale="1.3" class="layer" data-depth="0.12"><img src="./一平米咖啡馆_files/1-2-3.png"></span>
+             <span scale="1.2" class="layer" data-depth="0.13"><img src="./一平米咖啡馆_files/1-2-4.png"></span>
+         </div>
+         <img class="s1-2" src="./一平米咖啡馆_files/1-4.jpg">
+         <span class="s1-4">
+             <canvas id="q1" width="348" height="255"></canvas>
+         </span>
+         <div class="s1-3">
+            <span class="layer" data-depth="-0.1"><img src="./一平米咖啡馆_files/1-3-4.png"></span>
+            <span class="layer" data-depth="0.15"><img src="./一平米咖啡馆_files/1-3-2.png"></span>
+            <span class="layer" data-depth="-0.15"><img src="./一平米咖啡馆_files/1-3-3.png"></span>
+            <span class="layer" data-depth="0.1"><img src="./一平米咖啡馆_files/1-3-1.png"></span>
+         </div>
+         
+         <div class="s1-txt layer" data-depth="-0.1">
+             <span><img class="cpImg" src="./一平米咖啡馆_files/1-1-1.png"></span>
+             <span><img class="cpImg" src="./一平米咖啡馆_files/1-1-2.png"></span>
+             <span><img class="cpImg" src="./一平米咖啡馆_files/1-1-3.png"></span>
+             <span><img src="./一平米咖啡馆_files/1-1-4.png"></span>
+             <span><img src="./一平米咖啡馆_files/1-1-5.png"></span>
+         </div>
+         
+         <span class="upBtn UP_ico"></span>
+    </div>
+      
+	<div class="box-step zhuquan2">
+        <div class="s2-1">
+           <span class="layer" data-depth="-0.1"><img src="./一平米咖啡馆_files/2-2-1.png"></span>
+           <span class="layer" data-depth="0.12"><img src="./一平米咖啡馆_files/2-2-2.png"></span>
+           <span class="layer" data-depth="-0.12"><img src="./一平米咖啡馆_files/2-2-3.png"></span>
+        </div>
+        <span class="s2-2">
+             <img class="cbIcon " data-depth="0.2" src="./一平米咖啡馆_files/2-3.png">
+             <canvas id="q2-1" width="626" height="636"></canvas>
+             <canvas id="q2-2" width="626" height="636"></canvas>
+        </span>
+        <div class="s2-txt layer" data-depth="-0.1">
+            <span><img class="cpImg" src="./一平米咖啡馆_files/2-1-1.png"></span>
+            <span><img class="cpImg" src="./一平米咖啡馆_files/2-1-2.png"></span>
+            <span><img class="cpImg" src="./一平米咖啡馆_files/2-1-3.png"></span>
+            <span><img src="./一平米咖啡馆_files/2-1-4.png"></span>
+           <span> <img src="./一平米咖啡馆_files/2-1-5.png"></span>
+        </div>
+        <span class="upBtn UP_ico"></span>
+    </div>
+    
+	<div class="box-step zhuquan3">
+         <div class="s3-1">
+             <span class="layer" data-depth="-0.1"><img src="./一平米咖啡馆_files/3-3-1.png"></span>
+             <span class="layer" data-depth="-0.12"><img src="./一平米咖啡馆_files/3-3-2.png"></span>
+             <span class="layer" data-depth="0.12"><img src="./一平米咖啡馆_files/3-3-3.png"></span>
+             <span class="layer" data-depth="0.17"><img src="./一平米咖啡馆_files/3-3-4.png"></span>
+         </div>
+         <img class="s3-2" src="./一平米咖啡馆_files/3-2.png">
+         
+         <span class="layer" data-depth="-0.1" style="width:190px; height:248px;bottom:95px; right:76px">
+            <em class="s3-man"><canvas id="q3" width="348" height="513"></canvas></em>
+         </span>
+         <span class="layer" data-depth="0.1">  
+            <em class="s3-woman"><canvas id="q4" width="348" height="513"></canvas></em>
+         </span>
+
+         <div class="s3-txt layer" data-depth="-0.1">
+             <span><img class="cpImg" src="./一平米咖啡馆_files/3-1-1.png"></span>
+             <span><img class="cpImg" src="./一平米咖啡馆_files/3-1-2.png"></span>
+             <span><img class="cpImg" src="./一平米咖啡馆_files/3-1-3.png"></span>
+             <span><img src="./一平米咖啡馆_files/3-1-4.png"></span>
+             <span><img src="./一平米咖啡馆_files/3-1-5.png"></span>
+         </div>
+         <span class="upBtn UP_ico"></span>
+    </div>  
+    <div class="box-step zhuquan4">
+    <div class="s4-2 layer" data-depth="0.1">
+            <span><img src="./一平米咖啡馆_files/4-3-2.png"></span>
+    </div>
+         <div class="s4-3">
+            <canvas id="q5" class="layer" data-depth="-0.1" width="374" height="354"></canvas>
+            <canvas id="q6" class="layer" data-depth="0.13" width="557" height="823" style="z-index:54"></canvas>
+         </div>
+         <img class="s4-1" src="./一平米咖啡馆_files/4-2.png">
+         <div class="s4-2">
+            <span class="layer" data-depth="-0.1"><img src="./一平米咖啡馆_files/4-3-1.png"></span>
+            <span class="layer" data-depth="0.1"><img src="./一平米咖啡馆_files/4-3-4.png"></span>
+            <span class="layer" data-depth="-0.15"><img src="./一平米咖啡馆_files/4-3-3.png"></span>
+            <span class="layer" data-depth="0.13"><img src="./一平米咖啡馆_files/4-3-5.png"></span>
+         </div>
+         
+         <div class="s4-txt layer" data-depth="-0.1">
+             <span><img class="cpImg" src="./一平米咖啡馆_files/4-1-1.png"></span>
+             <span><img class="cpImg" src="./一平米咖啡馆_files/4-1-2.png"></span>
+             <span><img class="cpImg" src="./一平米咖啡馆_files/4-1-3.png"></span>
+             <span><img src="./一平米咖啡馆_files/4-1-4.png"></span>
+             <span><img src="./一平米咖啡馆_files/4-1-5.png"></span>
+         </div>
+         <span class="upBtn UP_ico"></span>
+    </div>  
+    <div class="box-step zhuquan5">
+        <img class="s5-logo" src="./一平米咖啡馆_files/logo.png">
+        <div class="box">
+            <span class="s5-1">
+                <img src="./一平米咖啡馆_files/5-2-1.png">
+                <img src="./一平米咖啡馆_files/5-2-2.png">
+            </span>
+            <span class="s5-3">
+               <img src="./一平米咖啡馆_files/5-4s.png">
+               <img style="opacity:0;" src="./一平米咖啡馆_files/5-4.png">
+            </span>
+            <span class="s5-4"></span>
+           
+            <span class="s5-2"></span>
+        </div>
+    </div> 
+</div>    
+
+
+
+
+<!--
+
+
+/*scale="1.2" class= "layer" data-depth="0.05"
+<script src="http://wximg.qq.com/wxp/libs/wxmoment/0.0.4/wxmoment.min.js"></script>
+new WxMoment.OrientationTip();
+*/
+
+-->
+
+<script src="./一平米咖啡馆_files/jquery-1.8.3.min.js"></script>
+<script src="./一平米咖啡馆_files/zepto.min.js"></script><script>window.$$ = window.Zepto</script>
+<script src="./一平米咖啡馆_files/self-min.js"></script>
+<script src="./一平米咖啡馆_files/fx.min.js"></script>
+<script src="./一平米咖啡馆_files/saved_resource"></script>
+<script src="./一平米咖啡馆_files/weixinjs.js"></script>
+<script src="./一平米咖啡馆_files/parallax.js"></script>
+<script>
+
+var Animate = {1:{up:{out:"pt-page-moveToTop","IN":"pt-page-moveFromBottom"},down:{out:"pt-page-moveToBottom","IN":"pt-page-moveFromTop"},left:{out:"pt-page-moveToLeft","IN":"pt-page-moveFromRight"},right:{out:"pt-page-moveToRight","IN":"pt-page-moveFromLeft"}},2:{up:{out:"pt-page-rotatePushTop","IN":"pt-page-moveFromBottom"},down:{out:"pt-page-rotatePushBottom","IN":"pt-page-moveFromTop"},left:{out:"pt-page-rotatePushLeft","IN":"pt-page-moveFromRight"},right:{out:"pt-page-rotatePushRight","IN":"pt-page-moveFromLeft"}},3:{up:{out:"pt-page-rotatePushTop","IN":"pt-page-rotatePullBottom pt-page-delay180"},down:{out:"pt-page-rotatePushBottom","IN":"pt-page-rotatePullTop pt-page-delay180"},left:{out:"pt-page-rotatePushLeft","IN":"pt-page-rotatePullRight pt-page-delay180"},right:{out:"pt-page-rotatePushRight","IN":"pt-page-rotatePullLeft pt-page-delay180"}},4:{up:{out:"pt-page-rotateBottomSideFirst","IN":"pt-page-moveFromBottom pt-page-delay200 pt-page-ontop"},down:{out:"pt-page-rotateTopSideFirst","IN":"pt-page-moveFromTop pt-page-delay200 pt-page-ontop"},left:{out:"pt-page-rotateRightSideFirst","IN":"pt-page-moveFromRight pt-page-delay200 pt-page-ontop"},right:{out:"pt-page-rotateLeftSideFirst","IN":"pt-page-moveFromLeft pt-page-delay200 pt-page-ontop"}},5:{up:{out:"pt-page-flipOutTop","IN":"pt-page-flipInBottom pt-page-delay500"},down:{out:"pt-page-flipOutBottom","IN":"pt-page-flipInTop pt-page-delay500"},left:{out:"pt-page-flipOutRight","IN":"pt-page-flipInLeft pt-page-delay500"},right:{out:"pt-page-flipOutLeft","IN":"pt-page-flipInRight pt-page-delay500"}},6:{up:{out:"pt-page-rotateFall pt-page-ontop","IN":"pt-page-scaleUp"},down:{out:"pt-page-rotateFalltoright pt-page-ontop","IN":"pt-page-scaleUp"},left:{out:"pt-page-rotateFall pt-page-ontop","IN":"pt-page-scaleUp"},right:{out:"pt-page-rotateFalltoright pt-page-ontop","IN":"pt-page-scaleUp"}},7:{up:{out:"pt-page-rotateFoldTop","IN":"pt-page-moveFromBottomFade"},down:{out:"pt-page-rotateFoldBottom","IN":"pt-page-moveFromTopFade"},left:{out:"pt-page-rotateFoldLeft","IN":"pt-page-moveFromRightFade"},right:{out:"pt-page-rotateFoldRight","IN":"pt-page-moveFromLeftFade"}},8:{up:{out:"pt-page-moveToTopFade","IN":"pt-page-rotateUnfoldBottom"},down:{out:"pt-page-moveToBottomFade","IN":"pt-page-rotateUnfoldTop"},left:{out:"pt-page-moveToLeftFade","IN":"pt-page-rotateUnfoldRight"},right:{out:"pt-page-moveToRightFade","IN":"pt-page-rotateUnfoldLeft"}},9:{up:{out:"pt-page-rotateCubeTopOut pt-page-ontop","IN":"pt-page-rotateCubeTopIn"},down:{out:"pt-page-rotateCubeBottomOut pt-page-ontop","IN":"pt-page-rotateCubeBottomIn"},left:{out:"pt-page-rotateCubeLeftOut pt-page-ontop","IN":"pt-page-rotateCubeLeftIn"},right:{out:"pt-page-rotateCubeRightOut pt-page-ontop","IN":"pt-page-rotateCubeRightIn"}},10:{up:{out:"pt-page-rotateCarouselTopOut pt-page-ontop","IN":"pt-page-rotateCarouselTopIn"},down:{out:"pt-page-rotateCarouselBottomOut pt-page-ontop","IN":"pt-page-rotateCarouselBottomIn"},left:{out:"pt-page-rotateCarouselLeftOut pt-page-ontop","IN":"pt-page-rotateCarouselLeftIn"},right:{out:"pt-page-rotateCarouselRightOut pt-page-ontop","IN":"pt-page-rotateCarouselRightIn"}},11:{up:{out:"pt-page-fad","IN":"pt-page-moveFromBottom pt-page-ontop"},down:{out:"pt-page-fade","IN":"pt-page-moveFromTop pt-page-ontop"},left:{out:"pt-page-fade","IN":"pt-page-moveFromRight pt-page-ontop"},right:{out:"pt-page-fade","IN":"pt-page-moveFromLeft pt-page-ontop"}},12:{up:{out:"pt-page-moveToTopFade","IN":"pt-page-moveFromBottomFade"},down:{out:"pt-page-moveToBottomFade","IN":"pt-page-moveFromTopFade"},left:{out:"pt-page-moveToLeftFade","IN":"pt-page-moveFromRightFade"},right:{out:"pt-page-moveToRightFade","IN":"pt-page-moveFromLeftFade"}},13:{up:{out:"pt-page-moveToTopEasing pt-page-ontop","IN":"pt-page-moveFromBottom"},down:{out:"pt-page-moveToBottomEasing pt-page-ontop","IN":"pt-page-moveFromTop"},left:{out:"pt-page-moveToLeftEasing pt-page-ontop","IN":"pt-page-moveFromRight"},right:{out:"pt-page-moveToRightEasing pt-page-ontop","IN":"pt-page-moveFromLeft"}},14:{up:{out:"pt-page-scaleDown","IN":"pt-page-moveFromBottom pt-page-ontop"},down:{out:"pt-page-scaleDown","IN":"pt-page-moveFromTop pt-page-ontop"},left:{out:"pt-page-scaleDown","IN":"pt-page-moveFromRight pt-page-ontop"},right:{out:"pt-page-scaleDown","IN":"pt-page-moveFromLeft pt-page-ontop"}},15:{up:{out:"pt-page-scaleDownUp","IN":"pt-page-scaleUp pt-page-delay300"},down:{out:"pt-page-scaleDown","IN":"pt-page-scaleUpDown pt-page-delay300"},left:{out:"pt-page-scaleDownUp","IN":"pt-page-scaleUp pt-page-delay300"},right:{out:"pt-page-scaleDown","IN":"pt-page-scaleUpDown pt-page-delay300"}},16:{up:{out:"pt-page-moveToTop pt-page-ontop","IN":"pt-page-scaleUp"},down:{out:"pt-page-moveToBottom pt-page-ontop","IN":"pt-page-scaleUp"},left:{out:"pt-page-moveToLeft pt-page-ontop","IN":"pt-page-scaleUp"},right:{out:"pt-page-moveToRight pt-page-ontop","IN":"pt-page-scaleUp"}},17:{up:{out:"rotateSlideOuttotop","IN":"rotateSlideIntotop"},down:{out:"rotateSlideOuttobottom","IN":"rotateSlideIntobottom"},left:{out:"pt-page-rotateSlideOut","IN":"pt-page-rotateSlideIn"},right:{out:"rotateSlideOuttoright","IN":"rotateSlideIntoright"}}};
+
+if(YM._weixin && YM._Android)
+{
+	
+}
+
+document.addEventListener('touchmove' , function (ev){
+	ev.preventDefault();
+	return false;
+} , false)
+
+
+var Animate_Index = 0;
+var Animate_lastIndex = Animate_Index;
+var Animate_isSwipe = true;
+var Animate_css = Animate[15];
+var Animate_Bstop = true;
+$('.box-step').eq(Animate_lastIndex).show();	
+var parallax ;
+
+
+
+var DELAY = 0.5;
+
+
+			
+function AnimateTween(){
+	
+	
+	
+
+if(parallax) parallax.disable();
+parallax = new Parallax($('.box-step').eq(Animate_Index)[0]);
+parallax.limit(120, 120);
+parallax.scalar(10.0, 6.0);	
+					
+					
+					
+		var TIME = 1.2;
+		
+		var scene2 = [];
+		var scene3 = [];
+		var scene4 = [];
+		var scene5 = [];
+		var scene6 = [];
+		
+		if( Animate_Index == 1){
+			
+			c1.stop()
+		}
+		
+		
+		
+		if( Animate_Index == 2 ||  Animate_Index == 0){
+			
+			if(c2) c2.stop()
+			if(c22) c22.stop()
+		}
+		
+		
+		if( Animate_Index == 3 ||  Animate_Index == 1){
+			
+			if(c3) c3.stop()
+			if(c4) c4.stop()
+		};
+		
+		if( Animate_Index == 4 ||  Animate_Index == 2){
+			
+			if(c5) c5.stop()
+			if(c6) c6.stop()
+		};
+		
+		
+		
+		
+		function _Loading (n){
+		      /*if(n == 1){
+				  scene2 = scene2.concat(img1);
+				  LoadFn(scene2 , function (){
+					  	c1 = new spriteCanvas ( 1 , ZHENLV , true );	
+                        c1.initDraw ( $('#q1')[0] , img1 );	
+								
+				  } , function ( p ){} , 20 , 0);  
+			  }*/
+			  if(n == 2){
+				  scene3 = scene3.concat(img22);
+				  scene3 = scene3.concat(img2);
+				  LoadFn(scene3 , function (){
+					   $('.zhuquan1 .UP_ico').css('left' , '50%')
+					  	c22 = new spriteCanvas ( 1 , ZHENLV , true );	
+                        c22.initDraw ( $('#q2-2')[0] , img22 );
+						
+						c2 = new spriteCanvas ( 1 , ZHENLV , false );	
+						c2.initDraw ( $('#q2-1')[0] , img2 );
+						c2.update = function (){
+							if(c2.now == 7) {
+								SetCanvas(22);
+								$('#q2-1').hide();
+								$('#q2-2').fadeIn();
+											
+							}
+						} 
+								
+				  } , function ( p ){});
+				  
+			  } 
+			  if(n == 3){
+				  scene4 = scene4.concat(img3);
+				  scene4 = scene4.concat(img4);
+				  
+				  LoadFn(scene4 , function (){
+					    $('.zhuquan2 .UP_ico').css('left' , '50%')
+					  	c3 = new spriteCanvas ( 1 , ZHENLV , true);	
+                        c3.initDraw ( $('#q3')[0] , img3 );
+						c4 = new spriteCanvas ( 1 , 8 , true);	
+                        c4.initDraw ( $('#q4')[0] , img4 );
+						
+				  } , function ( p ){} );   
+				  
+			  }
+			  if(n == 4){
+				  
+				   scene5 = scene5.concat(img5);
+				   scene5 = scene5.concat(img6);
+				   LoadFn(scene5 , function (){
+					   $('.zhuquan3 .UP_ico ,.zhuquan4 .UP_ico').css('left' , '50%')
+					   c5 = new spriteCanvas ( 1 , ZHENLV , true);	
+                       c5.initDraw ( $('#q5')[0] , img5 );	
+					   
+					   c6 = new spriteCanvas ( 1 , 8 , true);	
+                       c6.initDraw ( $('#q6')[0] , img6 );
+					   	
+				  } , function ( p ){} );   
+			  }	
+		}
+		
+		switch(Animate_Index)
+		{
+			
+			case 0:
+			$('.zhuquan1 .UP_ico').fadeIn();	
+			   clearTimeout(window.TIMER);
+               window.TIMER = setTimeout( function (){SetCanvas(1)} , 100);
+			   _Loading(2);
+
+				$('.s1-txt .cpImg').show();
+			    $('.s1-txt .cpImg').each( function ( i ){
+						$(this).from({opacity : 0 , delay : 2.2 + i * .7} ,0.7,function(){
+							if(i == 1){
+								$('.s1-txt img').show();
+								$('.s1-txt img').eq(3).from({transform : 'translate(30px , 30px)' , opacity : 0} ,0.7 );
+								$('.s1-txt img').eq(4).from({transform : 'translate(-30px , -30px)' , opacity : 0} ,0.7);
+							}
+						});
+			    });
+				
+				$('.s1-1 img').each( function ( i ){
+					var _this = $(this);
+					_this.from({transform : 'translate(0 , 100px)' , opacity : 0 , delay : 0.7 + i * .3} ,TIME,function(){
+						
+						if(_this.attr('src').indexOf('1-2-1') == -1) _this.addClass('fudong');
+						
+						
+					}); 
+			    });
+				$('.s1-2 ,.s1-4').from({ transform : 'translate(0 , 50px)' , opacity : 0 , delay : 0.7 } ,TIME);
+				$('.s1-3 img').each( function ( i ){
+					var _this = $(this);
+					_this.from({transform : 'translate(0 , 50px)' , opacity : 0 , delay : 0.7 + i * .2} ,TIME,function(){
+						if(i == 3){
+							
+						if(_this.attr('src').indexOf('1-3-1') == -1) _this.addClass('fudong');
+							
+						}
+					}); 
+			    });
+			break;
+			
+			case 1:
+			   clearTimeout(window.TIMER);
+               window.TIMER = setTimeout( function (){SetCanvas(2)} , 100);
+			   _Loading(3);
+			   $('.s2-txt .cpImg').show();
+			   $('.s2-txt .cpImg').each( function ( i ){
+						$(this).from({opacity : 0 , delay : 2.2 + i * .7} ,0.7,function(){
+							if(i == 1){
+								$('.s2-txt img').show();
+								$('.s2-txt img').eq(4).from({transform : 'translate(30px , 30px)' , opacity : 0} ,0.7);
+								$('.s2-txt img').eq(3).from({transform : 'translate(-30px , -30px)' , opacity : 0} ,0.7);
+							}
+						});
+			    });
+				
+				$('.s2-1 img').each( function ( i ){
+					var _this = $(this);
+					_this.from({transform : 'translate(0 , 100px)' , opacity : 0 , delay : .7 + i * .2} ,TIME,function(){
+						_this.addClass('fudong');
+					}); 
+			    });
+				$('#q2-1').from({ transform : 'translate(0 , 50px)' , opacity : 0 , delay : 0.7 } ,TIME);
+				$('.cbIcon').from({ transform : 'translate(0 , 50px)' , opacity : 0 , delay : 0.7 } ,TIME);
+				$('.zhuquan2 .UP_ico').fadeIn();	
+					
+							
+							
+			break;
+			
+			case 2:
+			   clearTimeout(window.TIMER);
+               window.TIMER = setTimeout( function (){SetCanvas(3) ;SetCanvas(4)} , 100);
+			   _Loading(4);
+			   $('.s3-txt .cpImg').show();
+			   $('.s3-txt .cpImg').each( function ( i ){
+						$(this).from({opacity : 0 , delay : 2.2 + i * .7} ,0.7,function(){
+							if(i == 1){
+								$('.s3-txt img').show();
+								$('.s3-txt img').eq(4).from({transform : 'translate(-30px , -30px)' , opacity : 0} ,0.7);
+								$('.s3-txt img').eq(3).from({transform : 'translate(30px , 30px)' , opacity : 0} ,0.7);
+							}
+						});
+			    });
+				
+				$('.s3-1 img').each( function ( i ){
+					var _this = $(this);
+					_this.from({transform : 'translate(0 , 100px)' , opacity : 0 , delay : 0.7 + i * .2} ,TIME,function(){
+						if(i!=1){ _this.addClass('fudong3');}
+						
+					}); 
+			    });
+				$('.s3-2').from({ transform : 'translate(0 , 50px)' , opacity : 0 , delay : 0.7 } ,TIME,function(){
+				   $('.s3-2').addClass('fudong1')	
+				});
+				$('.s3-woman ,.s3-man').from({ transform : 'translate(0 , 50px)' , opacity : 0 , delay : 0.7 } ,TIME,function(){
+				   $('.s3-woman ,.s3-man').addClass('fudong2')	
+				});
+				$('.zhuquan3 .UP_ico').fadeIn();	
+				
+				
+							
+				
+			break; 
+			
+			case 3:
+			   clearTimeout(window.TIMER);
+               window.TIMER = setTimeout( function (){SetCanvas(5);SetCanvas(6)} , 100);  
+			   
+			   $('.s4-txt .cpImg').show();
+			   $('.s4-txt .cpImg').each( function ( i ){
+						$(this).from({opacity : 0 , delay : 2.2 + i * .7} ,0.7,function(){
+							if(i == 1){
+								$('.s4-txt img').show();
+								$('.s4-txt img').eq(4).from({transform : 'translate(-30px , -30px)' , opacity : 0} ,0.7);
+								$('.s4-txt img').eq(3).from({transform : 'translate(30px , 30px)' , opacity : 0} ,0.7);
+							}
+						});
+			    });
+				
+				$('.s4-2 img').each( function ( i ){
+					var _this = $(this);
+					_this.from({transform : 'translate(0 , 100px)' , opacity : 0 , delay : .7 + i * .2} ,TIME,function(){
+						_this.addClass('fudong');
+						
+					}); 
+			    });
+				
+				
+					$('.zhuquan4 .UP_ico').fadeIn();	
+			
+							
+							
+							
+			break;  
+			
+			case 4:
+			    $('.s5-1 img').each( function ( i ){
+					var _this = $(this);
+					_this.from({transform : 'translate(0 , 100px)' , opacity : 0 , delay : 0.5 + i * .2} ,TIME); 
+			    });
+				$('.s5-logo').from({ transform : 'translate(0 , -50px)' , opacity : 0 , delay : 0.7 } ,TIME);
+				$('.s5-2').from({ transform : 'translate(0 , 50px)' , opacity : 0 , delay : 0.7 } ,TIME);
+				$('.s5-3').from({ transform : 'translate(0 , 50px)' , opacity : 0 , delay : 0.8 } ,TIME , function (){
+					$('.s5-3 img:first').to({ opacity : 0 , delay : 0} , 1.5)
+					$('.s5-3 img:last').to({ opacity : 1 , delay : 0} , 1.5)	
+				});
+				$('.s5-4').from({ transform : 'translate(0 , 50px)' , opacity : 0 , delay : 1 } ,TIME);
+				//$('.s5-5').to({ transform : 'rotate(-70deg)' , opacity : 1  } ,1);
+				
+				
+				
+				
+				
+				
+				
+			break; 
+			
+		}
+		
+		
+};
+
+
+function GetRandomNum(Min,Max)
+{   
+	var Range = Max - Min;   
+	var Rand = Math.random();   
+	return(Min + Math.round(Rand * Range));   
+} 
+
+function swipeUpFn ( index , show){
+	if( index && index == Animate_Index) return;
+	if(!Animate_Bstop) return;
+	Animate_Bstop = false;
+	
+	var NowStep = $('.box-content .box-step').eq(Animate_lastIndex);
+	var NextStep = $('.box-content .box-step').eq(index ? index : ++ Animate_Index);
+	
+	
+	if( !NextStep.size() ) {
+		Animate_Index -- ;
+		Animate_Bstop = true;
+		return;	
+	}
+	if(index) Animate_Index = index;
+	
+	Animate_Bstop = true;
+	NowStep.fadeOut(1100)
+	NextStep.fadeIn(1100);
+	Animate_lastIndex = Animate_Index;
+	AnimateTween();
+};
+function swipeDownFn ( index ){
+	if(Animate_lastIndex == 0) return;
+	if( index && index == Animate_Index) return;
+	if(!Animate_Bstop) return;
+	Animate_Bstop = false;
+	
+	
+	var NowStep = $('.box-content .box-step').eq(Animate_lastIndex);
+	var NextStep = $('.box-content .box-step').eq(index ? index : -- Animate_Index);
+	
+	if(index) Animate_Index = index;
+	
+	
+	Animate_Bstop = true;
+	NowStep.fadeOut(500)
+NextStep.fadeIn(500);
+	Animate_lastIndex = Animate_Index;
+	AnimateTween();
+};
+		
+
+$( function (){
+    $$('.box-content').bind('swipeUp' , function (){
+		var SHOW = $('.box-step:visible');
+		if(SHOW.find('.upBtn').size() && SHOW.find('.upBtn').is(':hidden')) return;
+		if($('.box-step:visible').find('.upBtn').offset().left <= 0) return;
+		
+		swipeUpFn();		
+	}).bind('swipeDown' , function (){
+					/*if(!Animate_isSwipe) return;
+					swipeDownFn();*/
+					
+	});
+	$('a[href="#"]').attr('href' , 'javascript:;');
+});
+
+
+
+
+var LoadingImg = [];
+
+// 遍历所有img
+/*$('img').each( function (){
+	if(!$(this).attr('data-src')) return;
+	LoadingImg.push($(this).attr('data-src'));	
+});
+*/
+
+$('.zhuquan1 img , .zhuquan2 img').each( function (){
+	if(!$(this).attr('data-src')) return;
+	LoadingImg.push($(this).attr('data-src'));	
+});
+
+
+
+
+$('.s5-4').bind('touchend', function ( ev ){
+	ga('send', 'event', '地址页', '看能与谁偶遇')
+	_smq.push(['custom','地址页','看能与谁偶遇']);
+	ev.stopPropagation();
+	
+	
+	
+	if(Zhu._weixin){
+		
+		
+		$('.sharebox').fadeIn();
+		
+		/*$('.s5-5').show().to({ transform : 'rotate(-10deg)' , opacity : 1  } ,0.7 , function (){
+			$(document).one('touchend' , function (){
+				$('.s5-5').fadeOut( function (){
+					$('.s5-5').removeAttr('style');
+				});
+			})
+		
+		});	*/
+	}else{
+		share_sina();
+	}
+});
+
+//新浪微博分享
+function share_sina()
+{
+	var title = "一平米咖啡馆";
+    var url = "http://coffeemaker2016.siemens-home.bsh-group.cn/";
+    var img = "http://coffeemaker2016.siemens-home.bsh-group.cn/images/share.jpg";
+    var message = "一千个人有一千个咖啡馆梦想，这里有一平米，或许刚刚好 #一平米咖啡馆# http://t.cn/RcxeBMU";
+	var str = "http://service.t.sina.com.cn/share/share.php?&url=" + encodeURIComponent(url) + "&pic=" + encodeURIComponent(img) + "&content=" + encodeURIComponent(title) + "&title=" + encodeURIComponent(message);
+	window.open(str);
+}
+
+
+
+var ZHENLV = 10;
+
+var img0 = [];
+for( var j = 1 ; j < 37 ; j ++){
+	
+	
+	if(j % 2 == 0) img0.push('./一平米咖啡馆_files/q0/' + j + '.png')
+};
+var c0 = new spriteCanvas ( 1 , 15 , false );	
+
+var img1 = [];
+for( var j = 1 ; j < 41 ; j ++){
+	if(j % 3 == 0) img1.push('./一平米咖啡馆_files/q1/' + j + '.png')
+};
+var c1 = new spriteCanvas ( 1 , 10 , true );
+
+
+	
+var img22 = [];
+for( var j = 1 ; j < 41 ; j ++){
+	if(j % 3 == 0) img22.push('./一平米咖啡馆_files/q2-2/' + j + '.png')
+};
+
+var img2 = [];
+for( var j = 1 ; j < 26 ; j ++){
+	if(j % 3 == 0) img2.push('./一平米咖啡馆_files/q2-1/' + j + '.png')
+};
+
+var img3 = [];
+for( var j = 1 ; j < 41 ; j ++){
+	if(j % 3 == 0) img3.push('./一平米咖啡馆_files/q3v2/' + j + '.png')
+};
+
+var img4 = [];
+for( var j = 1 ; j < 41 ; j ++){
+	if(j % 3 == 0) img4.push('./一平米咖啡馆_files/q4/' + j + '.png')
+};
+
+var img5 = [];
+for( var j = 1 ; j < 21 ; j ++){
+	
+	if(j % 3 == 0) img5.push('./一平米咖啡馆_files/q5/' + j + '.png')
+};
+
+var img6 = [];
+for( var j = 1 ; j < 39 ; j ++){
+	
+	if(j % 6 == 0) img6.push('./一平米咖啡馆_files/q6/' + j + '.png')
+};
+
+
+
+var c2 , c3 , c4 , c5 , c6 , c22;
+
+
+LoadingImg = LoadingImg.concat(img0);
+LoadingImg = LoadingImg.concat(img1);
+//LoadingImg = LoadingImg.concat(img22);
+
+
+function SetCanvas( n ){
+	if(n == 0) {c0.play();}
+	if(n == 1) {c1.play();}
+	if(n == 2) {c2.play();}
+	if(n == 22) {c22.play();}
+	if(n == 3) {c3.play();}
+	if(n == 4) {c4.play();}
+	if(n == 5) {c5.play();}
+	if(n == 6) {c6.play();}
+}
+
+
+function HTMLStart  (){
+	AnimateTween();	
+}
+
+
+
+LoadFn(['./一平米咖啡馆_files/bj1.jpg','./一平米咖啡馆_files/0-1-1.png','./一平米咖啡馆_files/0-1-2.png' ,'./一平米咖啡馆_files/0-1-3.png','./一平米咖啡馆_files/0-1-4.png','./一平米咖啡馆_files/0-1-5.png','./一平米咖啡馆_files/0-1-6.png'] , function (){
+	
+	$('#loading img').each( function (){
+	if(!$(this).attr('data-src')) return;
+	
+	$(this).attr('src' , $(this).attr('data-src')).removeAttr('data-src')
+});
+
+	
+	window.Ftime = new Date().getTime();
+	
+	$('.lod-1 .cpImg').show();
+	LoadFn(LoadingImg , function (){
+		
+		
+		
+			$('#main img').each( function (){
+				if(!$(this).attr('data-src')) return;
+				
+				$(this).attr('src' , $(this).attr('data-src')).removeAttr('data-src')
+			});
+				
+			
+			c0.initDraw ( $('#q0')[0] , img0 );
+			c1.initDraw ( $('#q1')[0] , img1 );								  
+
+	} , function ( p ){
+		
+		
+		//console.log(p)
+		if( p == 10) SetF (1);
+		if( p == 30) SetF (2);
+		if( p == 71) SetF (3);
+		if( p == 100) SetF (4);
+		
+		/*
+		document.title = p
+		
+		p = Math.min( 99 , p );
+		
+			    $('.lod-1 .cpImg').show();
+			    $('.lod-1 .cpImg').each( function ( i ){
+						$(this).from({opacity : 0 , delay : 0.5 + i * .7} ,0.3,function(){
+							if(i == 3){
+								
+							}
+						});
+			    });*/
+		
+	} , 10 , 10);
+});
+
+
+
+var setArr = [];
+
+function SetF ( index ){
+	
+	var b = false;
+	for( var j = 0 ; j < setArr.length ; j ++)
+	{
+		if( index == setArr[j]) b = true;
+	}
+	
+	
+	if(b) return;
+	
+	setArr.push( index );
+	
+	
+	
+	//console.log(index)
+	var time = 800;
+	
+	function _fn (){
+		
+		if( index == 4)
+		{
+			
+			setTimeout( LoadEnd , 700)
+			$('.lod-1 .cpImg').eq( index - 1).to( { opacity : 1} , time / 1000 , function (){
+				
+			})	;	
+		}else
+		{
+			$('.lod-1 .cpImg').eq( index - 1).to( { opacity : 1} , time / 1000 , function (){
+					
+			})	;	
+		}
+		
+		
+	}
+	
+	
+	if( ( new Date().getTime() - window.Ftime ) > time * index )
+	{
+		_fn ();
+	}else{
+		var _timer = setInterval( function (){
+			
+			if( ( new Date().getTime() - window.Ftime ) > time * index ) {
+				_fn ();	
+				clearInterval( _timer )	
+			}
+			
+		} , 30)	
+	}
+	
+	
+	
+	
+	
+		
+}
+
+
+
+
+function LoadEnd (){
+			
+
+			$('.lod-1 img').show();
+			$('.lod-1 img').eq(4).from({transform : 'translate(30px , 30px)' , opacity : 0} ,0.7);
+			$('.lod-1 img').eq(5).from({transform : 'translate(-30px , -30px)' , opacity : 0} ,0.7,function(){
+				
+				
+					setTimeout( function (){
+							$('.lod-1').fadeOut( function (){
+								SetCanvas(0);	
+							});
+							
+							
+							setTimeout( function (){
+								$('.lod-3').fadeIn(1500);	
+							} , 700)
+							
+							
+							$('.lod-4,.lod-2').show();
+							$('.lod-4').from({transform : 'rotate(-90deg)' , opacity : 0 ,delay:0.8} ,0.8);
+					} , 1000)
+					
+			});	
+}
+
+
+$$('.lod-3').tap(function(){
+	$('#loading').fadeOut();
+	HTMLStart ();
+	
+	ga('send', 'event', '首页', '开始体验')
+	
+	
+	_smq.push(['custom','首页','开始体验']);
+	
+});
+
+
+
+
+
+
+
+$('.sound-on').bind('touchstart' , function ( ev){
+			ev.preventDefault();
+			ev.stopPropagation();
+			if($(this).hasClass('sound-off'))
+				{
+					localStorage.setItem('sound' , 1)	
+					
+					$(this).removeClass('sound-off');
+					 $('#sound0')[0].play();
+					return;
+				}
+				$(this).addClass('sound-off');
+				$('#sound0')[0].pause();
+				localStorage.setItem('sound' , 2)	
+				
+				
+		});
+		if(!localStorage.getItem('sound'))
+		{
+			$('body').one('touchstart' , function (){
+				if(localStorage.getItem('sound') == '2') return;
+				
+				$('#sound0')[0].play();
+				localStorage.setItem('sound' , 1)	
+			})	;
+        	
+		}
+	if(localStorage.getItem('sound') == '1' || !localStorage.getItem('sound'))
+	{
+		$('#sound0')[0].play();	
+	}else
+	{
+		$('.sound-on').addClass('sound-off');
+	};
+	
+	
+	
+</script>
+</body></html>

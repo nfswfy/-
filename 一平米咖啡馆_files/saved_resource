@@ -1,0 +1,8 @@
+wx.config({
+            debug: false,
+            appId: 'wxcbf8a54b33208f60',
+            timestamp:1484618231,
+            nonceStr: '65251',
+            signature: '8e76d7fc9e6454099d5c28c51d7f2b475b2fc5cc',
+            jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','translateVoice','getLocation']
+        });
